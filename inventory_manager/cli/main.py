@@ -44,7 +44,7 @@ def add_product(session):
         print(f"{c.id}: {c.name}")
     cat_id = int(input("Choose category ID: "))
 
-    # Show suppliers
+    
     suppliers = session.query(Supplier).all()
     print("Suppliers:")
     for s in suppliers:
